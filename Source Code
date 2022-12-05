@@ -1,15 +1,16 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 int main()
 {
-float population; 
-float avaragepopulation , year  , result , resultofavarage;
+double population; // we will use double here because most of country have more than 4.9x10^308. //
+double avaragepopulation , year  , result , resultofavarage; // im not using simple abbreviation for better view.//
 cout<<"Enter the population:"<<" ";
 cin>>population;
 cout<<"Enter the avarage population"<<" ";
-cin>>avaragepopulation ;
-cout<<"How many year will growth?"<<" ";
+cin>>avaragepopulation ; // here we enter numbers like 1.5 , 0.4 ... //
+cout<<"How many year will growth?"<<" "; //enter how many year this growth will be.//
 cin>>year;
 resultofavarage=population*avaragepopulation/100;
 result=population+(avaragepopulation*year);
